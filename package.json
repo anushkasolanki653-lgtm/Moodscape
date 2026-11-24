@@ -1,0 +1,22 @@
+﻿{
+  "name": "moodscape",
+  "version": "1.0.0",
+  "description": "A modular JavaScript generative art engine that translates emotions into abstract visual compositions.",
+  "type": "module",
+  "main": "./src/engine/generator.js",
+  "exports": {
+    ".": "./src/engine/generator.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "keywords": [
+    "generative-art",
+    "creative-coding",
+    "javascript",
+    "canvas",
+    "procedural-art"
+  ],
+  "license": "MIT"
+}

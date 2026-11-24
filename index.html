@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9ed">
+  <title>MOODSCAPE — Feel it. Create it.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="brand" href="#">moodscape<span>✳</span></a>
+    <div class="nav-note">A LITTLE STUDIO FOR BIG FEELINGS</div>
+    <a class="github-link" href="https://github.com" target="_blank">
+      GitHub ↗
+    </a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="eyebrow">YOUR EMOTIONS, BUT MAKE THEM ART.</div>
+      <h1>How are you<br> <span>feeling today?</span></h1>
+      <p>Pick a feeling. Play with the colours. Make something that feels like you.</p>
+    </section>
+
+    <section class="studio">
+      <div class="controls">
+        <div class="section-label">01 / PICK YOUR MOOD</div>
+
+        <div class="mood-grid">
+          <button class="mood active" data-mood="happy">
+            <span>☀️</span> Happy
+          </button>
+          <button class="mood" data-mood="calm">
+            <span>🌊</span> Calm
+          </button>
+          <button class="mood" data-mood="chaotic">
+            <span>🌀</span> Chaotic
+          </button>
+          <button class="mood" data-mood="nostalgic">
+            <span>🍊</span> Nostalgic
+          </button>
+          <button class="mood" data-mood="focused">
+            <span>🎯</span> Focused
+          </button>
+          <button class="mood" data-mood="anxious">
+            <span>🫧</span> Anxious
+          </button>
+        </div>
+
+        <div class="section-label intensity-label">02 / FEEL IT DEEPER</div>
+        <div class="range-heading">
+          <span>Intensity</span>
+          <strong id="intensityValue">60%</strong>
+        </div>
+        <input type="range" id="intensity" min="10" max="100" value="60">
+
+        <div class="range-ends">
+          <span>A little</span>
+          <span>A LOT!</span>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">
+          ✳ Generate my mood <span>→</span>
+        </button>
+
+        <button class="random-btn" id="randomBtn">
+          Surprise me instead ↗
+        </button>
+      </div>
+
+      <div class="art-area">
+        <div class="art-top">
+          <span>YOUR CANVAS</span>
+          <span class="live-indicator">● LIVE CREATION</span>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="artCanvas" width="1200" height="800"></canvas>
+        </div>
+
+        <div class="art-footer">
+          <div>
+            <div class="art-title" id="artTitle">Sunshine in a daydream</div>
+            <div class="art-subtitle" id="artSubtitle">A little piece of happy.</div>
+          </div>
+          <div class="art-actions">
+            <button id="favoriteBtn" title="Save to favourites">♡</button>
+            <button id="downloadBtn" title="Download artwork">↓</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-heading">
+        <div>
+          <div class="section-label">03 / YOUR LITTLE COLLECTION</div>
+          <h2>Art that feels like you.</h2>
+        </div>
+        <span id="galleryCount">0 SAVED</span>
+      </div>
+      <div id="galleryGrid" class="gallery-grid">
+        <div class="empty-gallery">
+          Your gallery is waiting for a little magic. ✨
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Made with curiosity & a little chaos ✳</span>
+    <span>MOODSCAPE © 2026</span>
+  </footer>
+
+</body>
+</html>
+
